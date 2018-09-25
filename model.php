@@ -4,7 +4,7 @@ function identification()
 {	
 	try 
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=member_area', 'root', '58375837Zz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		$bdd = new PDO('mysql:host=localhost;dbname=member_area', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	}
 	catch (exception $e)
 	{
@@ -20,7 +20,7 @@ function registration()
 {
 	try 
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=member_area', 'root', '58375837Zz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		$bdd = new PDO('mysql:host=localhost;dbname=member_area', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	}
 	catch (exception $e)
 	{
@@ -41,7 +41,7 @@ function checkRegistration()
 {
 	try 
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=member_area', 'root', '58375837Zz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		$bdd = new PDO('mysql:host=localhost;dbname=member_area', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	}
 	catch (exception $e)
 	{

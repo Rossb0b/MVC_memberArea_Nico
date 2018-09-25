@@ -2,7 +2,11 @@
 
 require('model.php');
 require('registerView.php');
-$req = checkRegistration();
+
+if (isset($_POST['pseudo']))
+{
+	$req = checkRegistration();
+}
 
 if (isset($_POST['pseudo']) AND isset($_POST['password']) AND isset($_POST['email']) AND isset($_POST['password_verification']))
 {
